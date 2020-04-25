@@ -11,7 +11,8 @@ import Foundation
 final class HomeNavigator: Navigator {
   func setup() {
     let vc = HomeController.initFromNib()
-    navigationController.viewControllers = [vc]
-    //AnalyticLogProvider.logNavigator(name: NSStringFromClass(type(of: self)), functionName: "setup")
+    vc.viewModel = HomeViewModel(navigator: self)
+    navigationController.setViewControllers([vc], animated: true)
   }
+  
 }

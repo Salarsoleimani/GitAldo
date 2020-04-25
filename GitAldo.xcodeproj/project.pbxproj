@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2525538E2453F16D0042D254 /* HomeControllerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2525538D2453F16D0042D254 /* HomeControllerUI.swift */; };
+		252553912453F1C40042D254 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 252553932453F1C40042D254 /* Localizable.strings */; };
+		252553A82453F3610042D254 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252553952453F3600042D254 /* Time.swift */; };
+		252553A92453F3610042D254 /* URL+URLParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252553962453F3600042D254 /* URL+URLParameters.swift */; };
+		252553AA2453F3610042D254 /* Follow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252553972453F3600042D254 /* Follow.swift */; };
+		252553AB2453F3610042D254 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252553982453F3600042D254 /* Parameters.swift */; };
+		252553AC2453F3610042D254 /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252553992453F3600042D254 /* Repositories.swift */; };
+		252553AD2453F3610042D254 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2525539A2453F3600042D254 /* Review.swift */; };
+		252553AE2453F3610042D254 /* PullRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2525539B2453F3610042D254 /* PullRequest.swift */; };
+		252553AF2453F3620042D254 /* Gist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2525539C2453F3610042D254 /* Gist.swift */; };
+		252553B02453F3620042D254 /* String+PercentEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2525539D2453F3610042D254 /* String+PercentEncoding.swift */; };
+		252553B12453F3620042D254 /* Releases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2525539E2453F3610042D254 /* Releases.swift */; };
+		252553B22453F3620042D254 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2525539F2453F3610042D254 /* File.swift */; };
+		252553B32453F3620042D254 /* Milestone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252553A02453F3610042D254 /* Milestone.swift */; };
+		252553B42453F3620042D254 /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252553A12453F3610042D254 /* PublicKey.swift */; };
+		252553B52453F3620042D254 /* Octokit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252553A22453F3610042D254 /* Octokit.swift */; };
+		252553B62453F3620042D254 /* Stars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252553A32453F3610042D254 /* Stars.swift */; };
+		252553B72453F3620042D254 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252553A42453F3610042D254 /* Configuration.swift */; };
+		252553B82453F3620042D254 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252553A52453F3610042D254 /* Label.swift */; };
+		252553B92453F3620042D254 /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252553A62453F3610042D254 /* Issue.swift */; };
+		252553BA2453F3620042D254 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252553A72453F3610042D254 /* User.swift */; };
 		257A05CB244FD12E007C13B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A05CA244FD12E007C13B1 /* AppDelegate.swift */; };
 		257A05CD244FD12E007C13B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A05CC244FD12E007C13B1 /* SceneDelegate.swift */; };
 		257A05CF244FD12E007C13B1 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A05CE244FD12E007C13B1 /* HomeController.swift */; };
@@ -23,12 +44,10 @@
 		257A0605244FD363007C13B1 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A0604244FD363007C13B1 /* HomeViewModel.swift */; };
 		257A0610244FD3D5007C13B1 /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A0609244FD3D5007C13B1 /* LanguageManager.swift */; };
 		257A0611244FD3D5007C13B1 /* SoundEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A060A244FD3D5007C13B1 /* SoundEffects.swift */; };
-		257A0612244FD3D5007C13B1 /* UIButtonX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A060B244FD3D5007C13B1 /* UIButtonX.swift */; };
 		257A0615244FD3D5007C13B1 /* Vibrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A060E244FD3D5007C13B1 /* Vibrator.swift */; };
 		257A0622244FD418007C13B1 /* NetworkPlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 257A0620244FD418007C13B1 /* NetworkPlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		257A0625244FD418007C13B1 /* NetworkPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257A061E244FD418007C13B1 /* NetworkPlatform.framework */; };
 		257A0626244FD418007C13B1 /* NetworkPlatform.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 257A061E244FD418007C13B1 /* NetworkPlatform.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		257A062A244FD41F007C13B1 /* SaSMocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A060D244FD3D5007C13B1 /* SaSMocker.swift */; };
 		257A062D244FD442007C13B1 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A062C244FD442007C13B1 /* UserDefaults.swift */; };
 		257A0637244FD475007C13B1 /* SSTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 257A0635244FD475007C13B1 /* SSTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		257A063A244FD475007C13B1 /* SSTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257A0633244FD475007C13B1 /* SSTools.framework */; };
@@ -102,6 +121,27 @@
 /* Begin PBXFileReference section */
 		061657F5C7B1CF1328111BE7 /* Pods_Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		137D831D68B211329BF3070C /* Pods-Domain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.debug.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.debug.xcconfig"; sourceTree = "<group>"; };
+		2525538D2453F16D0042D254 /* HomeControllerUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControllerUI.swift; sourceTree = "<group>"; };
+		252553922453F1C40042D254 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		252553952453F3600042D254 /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		252553962453F3600042D254 /* URL+URLParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+URLParameters.swift"; sourceTree = "<group>"; };
+		252553972453F3600042D254 /* Follow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Follow.swift; sourceTree = "<group>"; };
+		252553982453F3600042D254 /* Parameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
+		252553992453F3600042D254 /* Repositories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
+		2525539A2453F3600042D254 /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		2525539B2453F3610042D254 /* PullRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullRequest.swift; sourceTree = "<group>"; };
+		2525539C2453F3610042D254 /* Gist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gist.swift; sourceTree = "<group>"; };
+		2525539D2453F3610042D254 /* String+PercentEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+PercentEncoding.swift"; sourceTree = "<group>"; };
+		2525539E2453F3610042D254 /* Releases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Releases.swift; sourceTree = "<group>"; };
+		2525539F2453F3610042D254 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		252553A02453F3610042D254 /* Milestone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Milestone.swift; sourceTree = "<group>"; };
+		252553A12453F3610042D254 /* PublicKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicKey.swift; sourceTree = "<group>"; };
+		252553A22453F3610042D254 /* Octokit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Octokit.swift; sourceTree = "<group>"; };
+		252553A32453F3610042D254 /* Stars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stars.swift; sourceTree = "<group>"; };
+		252553A42453F3610042D254 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		252553A52453F3610042D254 /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		252553A62453F3610042D254 /* Issue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
+		252553A72453F3610042D254 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		257A05C7244FD12E007C13B1 /* GitAldo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitAldo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		257A05CA244FD12E007C13B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		257A05CC244FD12E007C13B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,12 +158,10 @@
 		257A05FF244FD341007C13B1 /* HomeController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeController.xib; sourceTree = "<group>"; };
 		257A0602244FD357007C13B1 /* HomeNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigator.swift; sourceTree = "<group>"; };
 		257A0604244FD363007C13B1 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		257A0609244FD3D5007C13B1 /* LanguageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LanguageManager.swift; path = "Clean Starter Project/Utils/LanguageManager.swift"; sourceTree = SOURCE_ROOT; };
-		257A060A244FD3D5007C13B1 /* SoundEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SoundEffects.swift; path = "Clean Starter Project/Utils/SoundEffects.swift"; sourceTree = SOURCE_ROOT; };
-		257A060B244FD3D5007C13B1 /* UIButtonX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIButtonX.swift; path = "Clean Starter Project/Utils/UIButtonX.swift"; sourceTree = SOURCE_ROOT; };
-		257A060D244FD3D5007C13B1 /* SaSMocker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SaSMocker.swift; path = "Clean Starter Project/Utils/SaSMocker.swift"; sourceTree = SOURCE_ROOT; };
-		257A060E244FD3D5007C13B1 /* Vibrator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Vibrator.swift; path = "Clean Starter Project/Utils/Vibrator.swift"; sourceTree = SOURCE_ROOT; };
-		257A060F244FD3D5007C13B1 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utility.swift; path = "Clean Starter Project/Utils/Utility.swift"; sourceTree = SOURCE_ROOT; };
+		257A0609244FD3D5007C13B1 /* LanguageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LanguageManager.swift; path = GitAldo/Utils/LanguageManager.swift; sourceTree = SOURCE_ROOT; };
+		257A060A244FD3D5007C13B1 /* SoundEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SoundEffects.swift; path = GitAldo/Utils/SoundEffects.swift; sourceTree = SOURCE_ROOT; };
+		257A060E244FD3D5007C13B1 /* Vibrator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Vibrator.swift; path = GitAldo/Utils/Vibrator.swift; sourceTree = SOURCE_ROOT; };
+		257A060F244FD3D5007C13B1 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utility.swift; path = GitAldo/Utils/Utility.swift; sourceTree = SOURCE_ROOT; };
 		257A061E244FD418007C13B1 /* NetworkPlatform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkPlatform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		257A0620244FD418007C13B1 /* NetworkPlatform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkPlatform.h; sourceTree = "<group>"; };
 		257A0621244FD418007C13B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -195,6 +233,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		252553942453F34A0042D254 /* OctoKit */ = {
+			isa = PBXGroup;
+			children = (
+				252553A42453F3610042D254 /* Configuration.swift */,
+				2525539F2453F3610042D254 /* File.swift */,
+				252553972453F3600042D254 /* Follow.swift */,
+				2525539C2453F3610042D254 /* Gist.swift */,
+				252553A62453F3610042D254 /* Issue.swift */,
+				252553A52453F3610042D254 /* Label.swift */,
+				252553A02453F3610042D254 /* Milestone.swift */,
+				252553A22453F3610042D254 /* Octokit.swift */,
+				252553982453F3600042D254 /* Parameters.swift */,
+				252553A12453F3610042D254 /* PublicKey.swift */,
+				2525539B2453F3610042D254 /* PullRequest.swift */,
+				2525539E2453F3610042D254 /* Releases.swift */,
+				252553992453F3600042D254 /* Repositories.swift */,
+				2525539A2453F3600042D254 /* Review.swift */,
+				252553A32453F3610042D254 /* Stars.swift */,
+				2525539D2453F3610042D254 /* String+PercentEncoding.swift */,
+				252553952453F3600042D254 /* Time.swift */,
+				252553962453F3600042D254 /* URL+URLParameters.swift */,
+				252553A72453F3610042D254 /* User.swift */,
+			);
+			path = OctoKit;
+			sourceTree = "<group>";
+		};
 		257A05BE244FD12E007C13B1 = {
 			isa = PBXGroup;
 			children = (
@@ -260,6 +324,7 @@
 				257A05F7244FD2D6007C13B1 /* Sounds */,
 				257A05F6244FD2CF007C13B1 /* Fonts */,
 				257A05D3244FD12F007C13B1 /* Assets.xcassets */,
+				252553932453F1C40042D254 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -318,6 +383,7 @@
 				257A05FF244FD341007C13B1 /* HomeController.xib */,
 				257A0602244FD357007C13B1 /* HomeNavigator.swift */,
 				257A0604244FD363007C13B1 /* HomeViewModel.swift */,
+				2525538D2453F16D0042D254 /* HomeControllerUI.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -328,23 +394,14 @@
 				257A0609244FD3D5007C13B1 /* LanguageManager.swift */,
 				257A060A244FD3D5007C13B1 /* SoundEffects.swift */,
 				257A060E244FD3D5007C13B1 /* Vibrator.swift */,
-				257A0607244FD380007C13B1 /* UI */,
 			);
 			path = Components;
-			sourceTree = "<group>";
-		};
-		257A0607244FD380007C13B1 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				257A060B244FD3D5007C13B1 /* UIButtonX.swift */,
-			);
-			path = UI;
 			sourceTree = "<group>";
 		};
 		257A061F244FD418007C13B1 /* NetworkPlatform */ = {
 			isa = PBXGroup;
 			children = (
-				257A060D244FD3D5007C13B1 /* SaSMocker.swift */,
+				252553942453F34A0042D254 /* OctoKit */,
 				257A0620244FD418007C13B1 /* NetworkPlatform.h */,
 				257A0621244FD418007C13B1 /* Info.plist */,
 			);
@@ -575,6 +632,7 @@
 					};
 					257A061D244FD418007C13B1 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					257A0632244FD475007C13B1 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -612,6 +670,7 @@
 				257A05D7244FD12F007C13B1 /* LaunchScreen.storyboard in Resources */,
 				257A0650244FE0EC007C13B1 /* ErrorSound.mp3 in Resources */,
 				257A066A244FE49D007C13B1 /* SplashController.xib in Resources */,
+				252553912453F1C40042D254 /* Localizable.strings in Resources */,
 				257A0600244FD341007C13B1 /* HomeController.xib in Resources */,
 				257A0651244FE0EC007C13B1 /* SplashSound.mp3 in Resources */,
 				257A0672244FE656007C13B1 /* OnboardingController.xib in Resources */,
@@ -715,9 +774,9 @@
 				257A0648244FE03E007C13B1 /* Defaults.swift in Sources */,
 				257A0673244FE656007C13B1 /* OnboardingController.swift in Sources */,
 				257A05FA244FD2F2007C13B1 /* SSColors.swift in Sources */,
+				2525538E2453F16D0042D254 /* HomeControllerUI.swift in Sources */,
 				257A065F244FE22E007C13B1 /* SplashViewModel.swift in Sources */,
 				257A066B244FE49D007C13B1 /* SplashController.swift in Sources */,
-				257A0612244FD3D5007C13B1 /* UIButtonX.swift in Sources */,
 				257A05E1244FD1B4007C13B1 /* ApplicationStarter.swift in Sources */,
 				257A0656244FE188007C13B1 /* Navigator.swift in Sources */,
 				257A0605244FD363007C13B1 /* HomeViewModel.swift in Sources */,
@@ -750,7 +809,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				257A062A244FD41F007C13B1 /* SaSMocker.swift in Sources */,
+				252553AA2453F3610042D254 /* Follow.swift in Sources */,
+				252553B62453F3620042D254 /* Stars.swift in Sources */,
+				252553AC2453F3610042D254 /* Repositories.swift in Sources */,
+				252553AE2453F3610042D254 /* PullRequest.swift in Sources */,
+				252553A82453F3610042D254 /* Time.swift in Sources */,
+				252553AF2453F3620042D254 /* Gist.swift in Sources */,
+				252553B72453F3620042D254 /* Configuration.swift in Sources */,
+				252553B52453F3620042D254 /* Octokit.swift in Sources */,
+				252553B12453F3620042D254 /* Releases.swift in Sources */,
+				252553B32453F3620042D254 /* Milestone.swift in Sources */,
+				252553B42453F3620042D254 /* PublicKey.swift in Sources */,
+				252553B02453F3620042D254 /* String+PercentEncoding.swift in Sources */,
+				252553A92453F3610042D254 /* URL+URLParameters.swift in Sources */,
+				252553AB2453F3610042D254 /* Parameters.swift in Sources */,
+				252553B82453F3620042D254 /* Label.swift in Sources */,
+				252553B22453F3620042D254 /* File.swift in Sources */,
+				252553AD2453F3610042D254 /* Review.swift in Sources */,
+				252553B92453F3620042D254 /* Issue.swift in Sources */,
+				252553BA2453F3620042D254 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -785,6 +862,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		252553932453F1C40042D254 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				252553922453F1C40042D254 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		257A05D5244FD12F007C13B1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1012,6 +1097,7 @@
 		257A0628244FD418007C13B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1029,6 +1115,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ca.ssApps.NetworkPlatform;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1039,6 +1126,7 @@
 		257A0629244FD418007C13B1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;

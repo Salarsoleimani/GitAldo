@@ -7,23 +7,31 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
+import SSTools
 
 class HomeController: UIViewController {
-  // MARK:- Constants
-  var viewModel: HomeViewModel!
-  // MARK:- Variables
-  
   // MARK:- Outlets
+  @IBOutlet weak var signInButton: UIButton!
+  @IBOutlet weak var signInImageButton: UIImageView!
+  // MARK:- Constants
+  let signOutBarButton = UIBarButtonItem(title: "button_signout".localize(), style: .plain, target: nil, action: nil)
   
+  // MARK:- Variables
+  var viewModel: HomeViewModel!
+  var disposeBag = DisposeBag()
+
   // MARK:- Life Cycles
   override func viewDidLoad() {
     super.viewDidLoad()
     setupUI()
+    bindViewModel()
   }
   
   // MARK:- Functions
-  private func setupUI() {
-    view.backgroundColor = SSColors.background.value
+  private func bindViewModel() {
+    
   }
   // MARK:- Actions
 }

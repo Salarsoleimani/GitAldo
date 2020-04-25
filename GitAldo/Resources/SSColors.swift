@@ -12,6 +12,11 @@ import UIKit
 enum SSColors {
   case background
   case text
+  case buttonBackground
+  case buttonText
+  
+  case darkGray
+  case tint
   
   case lightGray
   case lightGreen
@@ -39,9 +44,18 @@ extension SSColors {
       instanceColor = UIColor.UITraitCollectionColor(darkModeColor: UIColor(hex: "#28272C"), lightModeColor: UIColor.white)
     case .text:
       instanceColor = UIColor.UITraitCollectionColor(darkModeColor: UIColor(hex: "#ececec"), lightModeColor: UIColor(hex: "#9B9B9B"))
-    case .lightGray:
-      instanceColor = UIColor(hex: "3C3C42")
       
+    case .buttonBackground:
+      instanceColor = UIColor(hex: "#43CF71")
+    case .buttonText:
+      instanceColor = UIColor.UITraitCollectionColor(darkModeColor: UIColor(hex: "#ececec"), lightModeColor: UIColor(hex: "#9B9B9B"))
+      
+    case .lightGray:
+      instanceColor = UIColor(hex: "#3C3C42")
+    case .darkGray:
+      instanceColor = UIColor.UITraitCollectionColor(darkModeColor: UIColor.darkGray, lightModeColor: UIColor.lightGray)
+    case .tint:
+      instanceColor = UIColor(hex: "#DA2864")
     case .lightGreen:
       instanceColor = UIColor(hex: "43CF71")
     case .yellow:
@@ -59,6 +73,7 @@ extension SSColors {
       instanceColor = UIColor.UITraitCollectionColor(darkModeHexString: hexStringForDarkMode, lightModeHexString: hexStringForLightMode).withAlphaComponent(CGFloat(opacity))
     case .customWithDarkModeColor(let colorForDarkMode, let colorForLightMode, let opacity):
       UIColor.UITraitCollectionColor(darkModeColor: colorForDarkMode, lightModeColor: colorForLightMode).withAlphaComponent(CGFloat(opacity))
+      
     }
     return instanceColor
   }

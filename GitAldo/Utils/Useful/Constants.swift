@@ -6,7 +6,7 @@
 //  Copyright © 2020 BeKSaS. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 enum Constants {
   enum Keys: String {
@@ -22,6 +22,10 @@ enum Constants {
     case email = "salar.soleimanii@gmail.com"
     case mailSubject = "issue"
   }
+  struct Sizes {
+    static var cornerRadius: CGFloat = 15.0
+  }
+  
   enum GoogleAdUnitIds: String {
     // google testAdUnitIds
     case testAdBannerUnitID = "ca-app-pub-3940256099942544/2934735716"
@@ -32,3 +36,4 @@ enum Constants {
     case testAdNativeAdvancedVideoUnitID = "ca-app-pub-3940256099942544/2521693316"
   }
 }
+
