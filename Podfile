@@ -24,3 +24,10 @@ target 'Domain' do
   # Pods for Domain
 
 end
+target 'NetworkPlatform' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  pod "NBNRequestKit"
+  # Pods for Domain
+
+end

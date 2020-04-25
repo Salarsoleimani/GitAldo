@@ -27,13 +27,32 @@ final class Application {
   }
   
   func setupApplicationConfigurations() {
+    setupNavigationBarUI()
     LanguageManager.shared.defaultLanguage = .deviceLanguage
     IQKeyboardManager.shared.enable = true
     setupRateManager()
     setupUpdateManager()
     resetNotificationBadge()
   }
-  
+  fileprivate func setupNavigationBarUI() {
+    UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffset(horizontal: -1000, vertical: 0), for:UIBarMetrics.default)
+    let attrs: [NSAttributedString.Key: Any] = [
+      .foregroundColor: UIColor.white,
+      .font: SSFonts(.installed(.montserrat, .bold), size: .standard(.h1)).instance
+    ]
+    
+    if #available(iOS 11.0, *) {
+      UINavigationBar.appearance().prefersLargeTitles = true
+      UINavigationBar.appearance().largeTitleTextAttributes = attrs
+    }
+    UINavigationBar.appearance().barTintColor = .red
+    
+    // buttons
+    UINavigationBar.appearance().tintColor = .blue
+    UINavigationBar.appearance().titleTextAttributes = attrs
+    UINavigationBar.appearance().isTranslucent = true
+    
+  }
   private func setupUpdateManager() {
     Siren.shared.wail()
     Siren.shared.rulesManager = RulesManager(majorUpdateRules: Rules(promptFrequency: .immediately, forAlertType: .force), minorUpdateRules: Rules(promptFrequency: .daily, forAlertType: .option), patchUpdateRules: Rules(promptFrequency: .weekly, forAlertType: .skip), revisionUpdateRules: Rules.default, showAlertAfterCurrentVersionHasBeenReleasedForDays: 3)

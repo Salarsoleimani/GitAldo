@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04EE0878D2AD47A9CFE3CE09 /* Pods_NetworkPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AFB0C85EFA3C4E169A632AD /* Pods_NetworkPlatform.framework */; };
 		2525538E2453F16D0042D254 /* HomeControllerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2525538D2453F16D0042D254 /* HomeControllerUI.swift */; };
 		252553912453F1C40042D254 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 252553932453F1C40042D254 /* Localizable.strings */; };
 		252553A82453F3610042D254 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252553952453F3600042D254 /* Time.swift */; };
@@ -29,7 +30,6 @@
 		252553B92453F3620042D254 /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252553A62453F3610042D254 /* Issue.swift */; };
 		252553BA2453F3620042D254 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252553A72453F3610042D254 /* User.swift */; };
 		257A05CB244FD12E007C13B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A05CA244FD12E007C13B1 /* AppDelegate.swift */; };
-		257A05CD244FD12E007C13B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A05CC244FD12E007C13B1 /* SceneDelegate.swift */; };
 		257A05CF244FD12E007C13B1 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A05CE244FD12E007C13B1 /* HomeController.swift */; };
 		257A05D4244FD12F007C13B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 257A05D3244FD12F007C13B1 /* Assets.xcassets */; };
 		257A05D7244FD12F007C13B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 257A05D5244FD12F007C13B1 /* LaunchScreen.storyboard */; };
@@ -144,7 +144,6 @@
 		252553A72453F3610042D254 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		257A05C7244FD12E007C13B1 /* GitAldo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitAldo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		257A05CA244FD12E007C13B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		257A05CC244FD12E007C13B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		257A05CE244FD12E007C13B1 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		257A05D3244FD12F007C13B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		257A05D6244FD12F007C13B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -189,9 +188,12 @@
 		257A066E244FE656007C13B1 /* OnboardingController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OnboardingController.xib; sourceTree = "<group>"; };
 		257A066F244FE656007C13B1 /* OnboardingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
 		257A0670244FE656007C13B1 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		2AFB0C85EFA3C4E169A632AD /* Pods_NetworkPlatform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkPlatform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42A06A856EC100D18C817C60 /* Pods-NetworkPlatform.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkPlatform.debug.xcconfig"; path = "Target Support Files/Pods-NetworkPlatform/Pods-NetworkPlatform.debug.xcconfig"; sourceTree = "<group>"; };
 		5EFBF56E728C6CC220B14821 /* Pods-GitAldo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitAldo.release.xcconfig"; path = "Target Support Files/Pods-GitAldo/Pods-GitAldo.release.xcconfig"; sourceTree = "<group>"; };
 		60D80B79BF889588A5020AB1 /* Pods-Domain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.release.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.release.xcconfig"; sourceTree = "<group>"; };
 		995B3EA1D0C338AC469680CF /* Pods-GitAldo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitAldo.debug.xcconfig"; path = "Target Support Files/Pods-GitAldo/Pods-GitAldo.debug.xcconfig"; sourceTree = "<group>"; };
+		D93D5365C535AE91C153B195 /* Pods-NetworkPlatform.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkPlatform.release.xcconfig"; path = "Target Support Files/Pods-NetworkPlatform/Pods-NetworkPlatform.release.xcconfig"; sourceTree = "<group>"; };
 		E07DB87EA9E35BF37FCCC97D /* Pods_GitAldo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitAldo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -220,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				257A0667244FE3F0007C13B1 /* Domain.framework in Frameworks */,
+				04EE0878D2AD47A9CFE3CE09 /* Pods_NetworkPlatform.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +289,7 @@
 		257A05C9244FD12E007C13B1 /* GitAldo */ = {
 			isa = PBXGroup;
 			children = (
+				257A05DE244FD185007C13B1 /* Configuration */,
 				257A05FD244FD31D007C13B1 /* Utils */,
 				257A05F4244FD20B007C13B1 /* Resources */,
 				257A05F5244FD2BE007C13B1 /* Scenes */,
@@ -297,11 +301,11 @@
 			isa = PBXGroup;
 			children = (
 				257A05CA244FD12E007C13B1 /* AppDelegate.swift */,
-				257A05CC244FD12E007C13B1 /* SceneDelegate.swift */,
 				257A05D8244FD12F007C13B1 /* Info.plist */,
 				257A05E0244FD1B4007C13B1 /* ApplicationStarter.swift */,
 			);
-			path = Configuration;
+			name = Configuration;
+			path = Resources/Configuration;
 			sourceTree = "<group>";
 		};
 		257A05E8244FD1ED007C13B1 /* Domain */ = {
@@ -320,7 +324,6 @@
 			children = (
 				257A05F9244FD2F2007C13B1 /* SSColors.swift */,
 				257A05FB244FD2FC007C13B1 /* SSFonts.swift */,
-				257A05DE244FD185007C13B1 /* Configuration */,
 				257A05F7244FD2D6007C13B1 /* Sounds */,
 				257A05F6244FD2CF007C13B1 /* Fonts */,
 				257A05D3244FD12F007C13B1 /* Assets.xcassets */,
@@ -492,6 +495,8 @@
 				60D80B79BF889588A5020AB1 /* Pods-Domain.release.xcconfig */,
 				995B3EA1D0C338AC469680CF /* Pods-GitAldo.debug.xcconfig */,
 				5EFBF56E728C6CC220B14821 /* Pods-GitAldo.release.xcconfig */,
+				42A06A856EC100D18C817C60 /* Pods-NetworkPlatform.debug.xcconfig */,
+				D93D5365C535AE91C153B195 /* Pods-NetworkPlatform.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -501,6 +506,7 @@
 			children = (
 				061657F5C7B1CF1328111BE7 /* Pods_Domain.framework */,
 				E07DB87EA9E35BF37FCCC97D /* Pods_GitAldo.framework */,
+				2AFB0C85EFA3C4E169A632AD /* Pods_NetworkPlatform.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -581,6 +587,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 257A0627244FD418007C13B1 /* Build configuration list for PBXNativeTarget "NetworkPlatform" */;
 			buildPhases = (
+				8040C4816A2DA78C2715460C /* [CP] Check Pods Manifest.lock */,
 				257A0619244FD418007C13B1 /* Headers */,
 				257A061A244FD418007C13B1 /* Sources */,
 				257A061B244FD418007C13B1 /* Frameworks */,
@@ -741,6 +748,28 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GitAldo/Pods-GitAldo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8040C4816A2DA78C2715460C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetworkPlatform-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F5C64BB2C28D1848098D8377 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -791,7 +820,6 @@
 				257A0615244FD3D5007C13B1 /* Vibrator.swift in Sources */,
 				257A05CB244FD12E007C13B1 /* AppDelegate.swift in Sources */,
 				257A0611244FD3D5007C13B1 /* SoundEffects.swift in Sources */,
-				257A05CD244FD12E007C13B1 /* SceneDelegate.swift in Sources */,
 				257A0671244FE656007C13B1 /* OnboardingNavigator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1096,6 +1124,7 @@
 		};
 		257A0628244FD418007C13B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42A06A856EC100D18C817C60 /* Pods-NetworkPlatform.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1125,6 +1154,7 @@
 		};
 		257A0629244FD418007C13B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D93D5365C535AE91C153B195 /* Pods-NetworkPlatform.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;

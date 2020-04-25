@@ -207,6 +207,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Siren/Siren.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Stellar/Stellar.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftRater/SwiftRater.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/NBNRequestKit/RequestKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/BEKListKit/BEKListKit.framework"
@@ -219,6 +220,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Siren/Siren.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Stellar/Stellar.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftRater/SwiftRater.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/NBNRequestKit/RequestKit.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
