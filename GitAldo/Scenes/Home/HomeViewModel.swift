@@ -39,6 +39,12 @@ final class HomeViewModel: ViewModelType {
     }).disposed(by: disposeBag)
     return Output(loginTrigger: isLoggedIn.asDriver(), signOutTrigger: signoutTriggered)
   }
+  func toBranchs(branchUrl: String) {
+    navigator.toBranchs(branchUrl: branchUrl)
+  }
+  func toPullRequests(repository: RepositoryCellViewModel) {
+    
+  }
   
 }
 extension HomeViewModel {

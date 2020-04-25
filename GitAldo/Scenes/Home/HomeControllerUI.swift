@@ -18,19 +18,12 @@ extension HomeController {
 
   }
   private func setSignInButtonUI() {
-    signInButton.layer.cornerRadius = Constants.Sizes.cornerRadius
-    signInButton.backgroundColor = SSColors.buttonBackground.value
     let title = "button_login_github".localize()
-    let font = SSFonts(.installed(.montserrat, .bold), size: .standard(.h4)).instance
-    let attributedTitle = NSAttributedString(string: title, attributes: [.font: font])
-    signInButton.setAttributedTitle(attributedTitle, for: .normal)
-    signInButton.tintColor = SSColors.buttonText.value
+    signInButton.setTitle(title, for: .normal)
     setSignInButtonImage()
   }
   private func setSignInButtonImage() {
-    signInButton.setTitleColor(SSColors.buttonText.value, for: .normal)
-    signInButton.tintColor = SSColors.buttonText.value
-    signInButton.backgroundColor = SSColors.buttonBackground.value
+    signInButton.makeNiceButton()
 
     if #available(iOS 12.0, *) {
       let signInImage = traitCollection.userInterfaceStyle == .light ? #imageLiteral(resourceName: "ic_github_logo_light") : #imageLiteral(resourceName: "ic_github_logo_dark")
@@ -45,3 +38,4 @@ extension HomeController {
     }
   }
 }
+

@@ -14,6 +14,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeController" customModule="GitAldo" customModuleProvider="target">
             <connections>
+                <outlet property="repositoriesTableView" destination="Zkx-6m-7fg" id="1lg-lD-bcp"/>
                 <outlet property="signInButton" destination="Av7-IU-uVI" id="2Bh-6F-Ieq"/>
                 <outlet property="signInImageButton" destination="h2H-oB-Pzk" id="Mzq-Ir-pTC"/>
                 <outlet property="view" destination="rOc-Hj-BsG" id="c8k-eX-yMg"/>
@@ -42,17 +43,25 @@
                         <constraint firstAttribute="height" constant="38" id="c0p-wu-pcI"/>
                     </constraints>
                 </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zkx-6m-7fg" customClass="BEKMultiCellTable" customModule="BEKListKit">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="Zkx-6m-7fg" firstAttribute="top" secondItem="kUl-3x-QCf" secondAttribute="top" id="4uF-se-c7B"/>
                 <constraint firstItem="Av7-IU-uVI" firstAttribute="centerY" secondItem="h2H-oB-Pzk" secondAttribute="centerY" id="780-LF-OVo"/>
                 <constraint firstItem="kUl-3x-QCf" firstAttribute="trailing" secondItem="Av7-IU-uVI" secondAttribute="trailing" constant="16" id="B52-23-HuX"/>
+                <constraint firstItem="Zkx-6m-7fg" firstAttribute="trailing" secondItem="kUl-3x-QCf" secondAttribute="trailing" id="KSh-na-jLC"/>
                 <constraint firstItem="kUl-3x-QCf" firstAttribute="bottom" secondItem="Av7-IU-uVI" secondAttribute="bottom" constant="16" id="NDI-0L-Lfv"/>
                 <constraint firstItem="h2H-oB-Pzk" firstAttribute="leading" secondItem="Av7-IU-uVI" secondAttribute="leading" constant="8" id="QdN-GX-WTP"/>
+                <constraint firstItem="Zkx-6m-7fg" firstAttribute="leading" secondItem="kUl-3x-QCf" secondAttribute="leading" id="YEe-by-GjV"/>
                 <constraint firstItem="Av7-IU-uVI" firstAttribute="leading" secondItem="kUl-3x-QCf" secondAttribute="leading" constant="16" id="j0J-NA-0CB"/>
+                <constraint firstAttribute="bottom" secondItem="Zkx-6m-7fg" secondAttribute="bottom" id="r9S-o8-wDS"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="kUl-3x-QCf"/>
-            <point key="canvasLocation" x="139" y="131"/>
+            <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
         </view>
     </objects>
 </document>

@@ -6,7 +6,7 @@
 //  Copyright © 2020 BeKSaS. All rights reserved.
 //
 
-import Foundation
+import Domain
 
 final class HomeNavigator: Navigator {
   func setup() {
@@ -15,5 +15,7 @@ final class HomeNavigator: Navigator {
     navigationController.setNavigationBarHidden(false, animated: true)
     navigationController.setViewControllers([vc], animated: true)
   }
-  
+  func toBranchs(branchUrl: String) {
+    BranchsNavigator(navigationController: navigationController).setup(branchUrl)
+  }
 }

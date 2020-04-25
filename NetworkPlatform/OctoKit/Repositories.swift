@@ -4,6 +4,9 @@ import RequestKit
 import FoundationNetworking
 #endif
 
+public enum RepositoryType: String, Codable {
+  case all, owner, `public`, `private`, member
+}
 // MARK: model
 open class Repository: Codable {
     open private(set) var id: Int = -1
@@ -20,8 +23,9 @@ open class Repository: Codable {
     open private(set) var size: Int = -1
     open var lastPush: Date?
     open var stargazersCount: Int?
-    
-    enum CodingKeys: String, CodingKey {
+  open var branchUrl: String?
+
+  enum CodingKeys: String, CodingKey {
         case id
         case owner
         case name
@@ -36,6 +40,7 @@ open class Repository: Codable {
         case size
         case lastPush = "pushed_at"
         case stargazersCount = "stargazers_count"
+      case branchUrl = "branches_url"
     }
 }
 

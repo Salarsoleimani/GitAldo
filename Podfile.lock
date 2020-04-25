@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (5.1.0)
   - BEKListKit (1.0.3)
   - Hero (1.5.0)
   - IQKeyboardManagerSwift (6.5.5)
@@ -17,6 +18,7 @@ PODS:
   - SwiftRater (1.8.0)
 
 DEPENDENCIES:
+  - Alamofire
   - BEKListKit
   - Hero
   - IQKeyboardManagerSwift
@@ -30,6 +32,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - BEKListKit
     - Hero
     - IQKeyboardManagerSwift
@@ -51,6 +54,7 @@ CHECKOUT OPTIONS:
     :git: https://github.com/AugustRush/Stellar.git
 
 SPEC CHECKSUMS:
+  Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
   BEKListKit: eced55022c40444e55975752a03595751286e123
   Hero: b7385b75e7259da62f4f85462f59a5082d66b058
   IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
@@ -63,6 +67,6 @@ SPEC CHECKSUMS:
   Stellar: df980becd194eeb62d623af097582da0ef2219b9
   SwiftRater: 6094fa6e9b3866ff8beca0a871b4b5f9ab896a6d
 
-PODFILE CHECKSUM: b00acba9a105111e67907e5999d1df2abf5bb63b
+PODFILE CHECKSUM: 9a64783eee29c6f27a865b97833cdf820488a0ae
 
 COCOAPODS: 1.9.0

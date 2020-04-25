@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="106" id="KGk-i7-Jjw" customClass="RepositoryCell" customModule="GitAldo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="367" height="106"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hCK-nZ-s4M">
+                        <rect key="frame" x="8" y="8" width="351" height="94"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Rff-FT-hyt">
+                                <rect key="frame" x="8" y="8" width="335" height="78"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="w5G-LP-JOt">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="40"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_github_logo_dark" translatesAutoresizingMaskIntoConstraints="NO" id="AQa-3O-P99">
+                                                <rect key="frame" x="0.0" y="0.0" width="39" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="QhA-xz-TyR"/>
+                                                    <constraint firstAttribute="width" secondItem="AQa-3O-P99" secondAttribute="height" multiplier="46:47" id="xi3-Nn-m47"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCk-kY-SFF">
+                                                <rect key="frame" x="43" y="0.0" width="263.5" height="40"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_forked" translatesAutoresizingMaskIntoConstraints="NO" id="mWa-79-zje">
+                                                <rect key="frame" x="310.5" y="15" width="24.5" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="mWa-79-zje" secondAttribute="height" multiplier="46:47" id="5Pn-xT-Nn6"/>
+                                                    <constraint firstAttribute="height" constant="25" id="HWY-ta-DOi"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="mWa-79-zje" firstAttribute="width" secondItem="mWa-79-zje" secondAttribute="height" multiplier="46:47" id="7iL-VA-PWq"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IZa-vq-jrG">
+                                        <rect key="frame" x="0.0" y="48" width="335" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sD1-7H-be6">
+                                                <rect key="frame" x="0.0" y="0.0" width="163.5" height="30"/>
+                                                <color key="backgroundColor" red="0.31372549020000001" green="0.75294117650000003" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Pull Requests"/>
+                                                <connections>
+                                                    <action selector="didSelectPullReqs:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="uhG-Wr-Mlu"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCt-M5-cr2">
+                                                <rect key="frame" x="171.5" y="0.0" width="163.5" height="30"/>
+                                                <color key="backgroundColor" red="0.31372549020000001" green="0.75294117650000003" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="inc-hJ-8F6"/>
+                                                </constraints>
+                                                <state key="normal" title="Branchs"/>
+                                                <connections>
+                                                    <action selector="didSelectBranchs:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="zg7-dx-3Rh"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Rff-FT-hyt" secondAttribute="bottom" constant="8" id="bcA-ww-DTq"/>
+                            <constraint firstAttribute="trailing" secondItem="Rff-FT-hyt" secondAttribute="trailing" constant="8" id="gCV-E9-mo0"/>
+                            <constraint firstItem="Rff-FT-hyt" firstAttribute="leading" secondItem="hCK-nZ-s4M" secondAttribute="leading" constant="8" id="itw-TT-LF9"/>
+                            <constraint firstItem="Rff-FT-hyt" firstAttribute="top" secondItem="hCK-nZ-s4M" secondAttribute="top" constant="8" id="mG5-gY-2oL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hCK-nZ-s4M" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="JYo-Pu-sRE"/>
+                    <constraint firstItem="hCK-nZ-s4M" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="UjA-kq-dnE"/>
+                    <constraint firstAttribute="bottom" secondItem="hCK-nZ-s4M" secondAttribute="bottom" constant="8" id="por-Nr-oAV"/>
+                    <constraint firstAttribute="trailing" secondItem="hCK-nZ-s4M" secondAttribute="trailing" constant="8" id="spl-U8-yeB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="brancsButton" destination="mCt-M5-cr2" id="zVd-Vv-vQq"/>
+                <outlet property="containerView" destination="hCK-nZ-s4M" id="Bzx-fx-Ij7"/>
+                <outlet property="pullRequestsButton" destination="sD1-7H-be6" id="QAv-dV-mGF"/>
+                <outlet property="titleLabel" destination="cCk-kY-SFF" id="b0V-Wt-pdH"/>
+                <outlet property="typeImageView" destination="mWa-79-zje" id="5Dr-Cz-xUR"/>
+            </connections>
+            <point key="canvasLocation" x="171.73913043478262" y="128.57142857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_forked" width="64" height="64"/>
+        <image name="ic_github_logo_dark" width="120" height="120"/>
+    </resources>
+</document>
