@@ -16,6 +16,10 @@ enum Constants {
     case appOpenedCount = "com.storageKey.appOpenedCount"
     case isAdsRemoved = "com.storageKey.isAdsRemoved"
     case isOnboardingWatched = "com.storageKey.isOnboardingWatched"
+    
+    case tokenString = "com.storageKey.tokenString"
+    case tokenUrl = "com.storageKey.tokenUrl"
+    case isLoggedIn = "com.storageKey.isLoggedIn"
   }
   enum Links: String {
     case instagram = "https://www.instagram.com/salarsoleimani"

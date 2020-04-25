@@ -14,7 +14,7 @@ extension HomeController {
     
     view.backgroundColor = SSColors.background.value
     setSignInButtonUI()
-    
+
 
   }
   private func setSignInButtonUI() {

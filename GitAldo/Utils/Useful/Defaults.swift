@@ -7,6 +7,7 @@
 //
 
 import Domain
+import RxCocoa
 
 /// UserDefaults for Application layer
 struct Defaults {
@@ -16,7 +17,7 @@ struct Defaults {
   @UserDefault(Constants.Keys.isAdsRemoved.rawValue, defaultValue: false)
   static var isAdsRemoved: Bool
   
-  @UserDefault(Constants.Keys.isOnboardingWatched.rawValue, defaultValue: false)
+  @UserDefault(Constants.Keys.isOnboardingWatched.rawValue, defaultValue: true)
   static var isOnboardingWatched: Bool
   
   @UserDefault(Constants.Keys.fontScale.rawValue, defaultValue: 1.0)
@@ -24,4 +25,15 @@ struct Defaults {
   
   @UserDefault(Constants.Keys.fontFamily.rawValue, defaultValue: "Montserrat")
   static var fontFamily: String
+  
+  @UserDefault(Constants.Keys.tokenString.rawValue, defaultValue: "")
+  static var tokenString: String
+  
+  @UserDefault(Constants.Keys.tokenUrl.rawValue, defaultValue: "")
+   static var tokenUrl: String
+  
+  @UserDefault(Constants.Keys.isLoggedIn.rawValue, defaultValue: false)
+    static var isLoggedIn: Bool
 }
+
+let isLoggedIn = BehaviorRelay<Bool>(value: false)

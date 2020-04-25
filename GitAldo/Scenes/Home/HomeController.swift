@@ -31,7 +31,17 @@ class HomeController: UIViewController {
   
   // MARK:- Functions
   private func bindViewModel() {
-    
+    let input = HomeViewModel.Input(loginTrigger: signInButton.rx.tap.asDriver(), signOutTrigger: signOutBarButton.rx.tap.asDriver())
+    let output = viewModel.transform(input: input)
+    output.loginTrigger.drive(signInButton.rx.isHidden).disposed(by: disposeBag)
+    output.loginTrigger.drive(signInImageButton.rx.isHidden).disposed(by: disposeBag)
+    output.loginTrigger.asObservable().subscribe(onNext: { [navigationItem, signOutBarButton] (loggedIn) in
+      if !loggedIn {
+        navigationItem.rightBarButtonItems = nil
+      } else {
+        navigationItem.rightBarButtonItems = [signOutBarButton]
+      }
+    }).disposed(by: disposeBag)
   }
   // MARK:- Actions
 }

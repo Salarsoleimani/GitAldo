@@ -12,6 +12,7 @@ final class HomeNavigator: Navigator {
   func setup() {
     let vc = HomeController.initFromNib()
     vc.viewModel = HomeViewModel(navigator: self)
+    navigationController.setNavigationBarHidden(false, animated: true)
     navigationController.setViewControllers([vc], animated: true)
   }
   

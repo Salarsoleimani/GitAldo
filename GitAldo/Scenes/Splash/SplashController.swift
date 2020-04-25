@@ -9,7 +9,7 @@
 import UIKit
 import Stellar
 
-class SplashController: UIViewController {
+final class SplashController: UIViewController {
   // MARK:- Outlets
   @IBOutlet weak var launchImage: UIImageView!
   @IBOutlet weak var logoLabel: UILabel!
@@ -23,15 +23,21 @@ class SplashController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     assert(viewModel != nil)
+    setupUI()
   }
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
-    animation { [unowned self] in
-      self.viewModel.goToHomePage(handler: nil)
+    animation { [viewModel] in
+      viewModel?.goToHomePage()
     }
   }
   // MARK:- Actions
-  
+  private func setupUI() {
+    logoLabel.text = "app_name".localize()
+    logoLabel.textColor = SSColors.text.value
+    view.backgroundColor = SSColors.lightRed.value
+    navigationController?.setNavigationBarHidden(true, animated: false)
+  }
   // MARK:- Functions
   private func animation(completion: @escaping () -> ()){
     let startingScale = 1 - viewModel.scalePop
@@ -42,8 +48,9 @@ class SplashController: UIViewController {
       Vibrator.vibrate(hardness: 5)
       launchImage?.image = UIImage(named: "Logo")
     }.then().scaleXY(endingScale, endingScale).then().moveY(-60).snap(1).duration(1).animate()
-    logoLabel.delay(1.8).moveY(32).makeAlpha(1).duration(1).completion {
+    logoLabel.moveY(32).makeAlpha(1).duration(1).completion {
       completion()
     }.animate()
   }
 }
+

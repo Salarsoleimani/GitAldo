@@ -15,7 +15,7 @@ final class SplashViewModel {
   init( navigator: SplashNavigator) {
     self.navigator = navigator
   }
-  func goToHomePage(handler: (()->())?) {
+  func goToHomePage() {
     if !Defaults.isOnboardingWatched {
       navigator.toOnboarding()
       return
