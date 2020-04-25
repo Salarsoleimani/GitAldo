@@ -6,10 +6,17 @@
   Copyright © 2020 BeKSaS. All rights reserved.
 */
 
-"app_name" = "GitAldo";
+"app_name" = "Repositories";
 
 // Home Page
 
 "button_login_github" = "Sign In with GitHub";
 
 "button_signout" = "Sign Out";
+
+// pull requests
+"title_pullReqs" = "Pull Requests";
+
+// branchs
+
+"title_branchs" = "Branchs";

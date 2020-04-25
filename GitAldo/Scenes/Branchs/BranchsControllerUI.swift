@@ -10,6 +10,8 @@ import UIKit
 
 extension BranchsController {
   func setupUI() {
+    navigationItem.title = "title_branchs".localize()
+
     view.backgroundColor = SSColors.background.value
   }
 }

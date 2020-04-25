@@ -20,6 +20,8 @@ class PullRequestsController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     getPullReqs()
+    navigationItem.title = "title_pullReqs".localize()
+
   }
   // MARK:- Functions
   private func getPullReqs() {

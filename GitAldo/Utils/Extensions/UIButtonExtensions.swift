@@ -10,8 +10,8 @@ import UIKit
 
 extension UIButton {
   func makeNiceButton(_ backColor: UIColor = SSColors.buttonBackground.value) {
-    setTitleColor(SSColors.buttonText.value, for: .normal)
-    tintColor = SSColors.buttonText.value
+    //setTitleColor(SSColors.buttonText.value, for: .normal)
+    tintColor = UIColor.white
     backgroundColor = backColor
     layer.cornerRadius = Constants.Sizes.cornerRadius
     let font = SSFonts(.installed(.montserrat, .bold), size: .standard(.h4)).instance
