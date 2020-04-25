@@ -23,3 +23,8 @@ struct RepositoryCellViewModel {
     }
   }
 }
+extension Repository {
+  func asCellViewModel(_ delegate: RepositoryCellDelegate) -> RepositoryCellViewModel {
+    return RepositoryCellViewModel(model: self, delegate: delegate)
+  }
+}

@@ -18,4 +18,7 @@ final class HomeNavigator: Navigator {
   func toBranchs(branchUrl: String) {
     BranchsNavigator(navigationController: navigationController).setup(branchUrl)
   }
+  func toPullRequests(_ repository: RepositoryCellViewModel) {
+    PullRequestsNavigator(navigationController: navigationController).setup(repository)
+  }
 }

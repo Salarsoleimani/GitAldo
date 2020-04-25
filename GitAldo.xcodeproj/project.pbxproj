@@ -88,6 +88,12 @@
 		25E0DF512454218B0061C293 /* BranchsControllerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E0DF502454218B0061C293 /* BranchsControllerUI.swift */; };
 		25E0DF542454252E0061C293 /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E0DF532454252E0061C293 /* UIButtonExtensions.swift */; };
 		25E0DF562454253D0061C293 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E0DF552454253D0061C293 /* UIViewExtensions.swift */; };
+		25E0DF5B24542A740061C293 /* PullRequestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E0DF5924542A740061C293 /* PullRequestCell.swift */; };
+		25E0DF5C24542A740061C293 /* PullRequestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25E0DF5A24542A740061C293 /* PullRequestCell.xib */; };
+		25E0DF5E24542A9E0061C293 /* PullRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E0DF5D24542A9E0061C293 /* PullRequestViewModel.swift */; };
+		25E0DF6124542ADE0061C293 /* PullRequestsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E0DF5F24542ADE0061C293 /* PullRequestsController.swift */; };
+		25E0DF6224542ADE0061C293 /* PullRequestsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25E0DF6024542ADE0061C293 /* PullRequestsController.xib */; };
+		25E0DF6424542B040061C293 /* PullRequestsNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E0DF6324542B040061C293 /* PullRequestsNavigator.swift */; };
 		43A1081138CCDB3139214FF1 /* Pods_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 061657F5C7B1CF1328111BE7 /* Pods_Domain.framework */; };
 		7851B84272B988D2EB0E5808 /* Pods_GitAldo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07DB87EA9E35BF37FCCC97D /* Pods_GitAldo.framework */; };
 /* End PBXBuildFile section */
@@ -216,6 +222,12 @@
 		25E0DF502454218B0061C293 /* BranchsControllerUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchsControllerUI.swift; sourceTree = "<group>"; };
 		25E0DF532454252E0061C293 /* UIButtonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
 		25E0DF552454253D0061C293 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		25E0DF5924542A740061C293 /* PullRequestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestCell.swift; sourceTree = "<group>"; };
+		25E0DF5A24542A740061C293 /* PullRequestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PullRequestCell.xib; sourceTree = "<group>"; };
+		25E0DF5D24542A9E0061C293 /* PullRequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestViewModel.swift; sourceTree = "<group>"; };
+		25E0DF5F24542ADE0061C293 /* PullRequestsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestsController.swift; sourceTree = "<group>"; };
+		25E0DF6024542ADE0061C293 /* PullRequestsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PullRequestsController.xib; sourceTree = "<group>"; };
+		25E0DF6324542B040061C293 /* PullRequestsNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestsNavigator.swift; sourceTree = "<group>"; };
 		2AFB0C85EFA3C4E169A632AD /* Pods_NetworkPlatform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkPlatform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42A06A856EC100D18C817C60 /* Pods-NetworkPlatform.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkPlatform.debug.xcconfig"; path = "Target Support Files/Pods-NetworkPlatform/Pods-NetworkPlatform.debug.xcconfig"; sourceTree = "<group>"; };
 		5EFBF56E728C6CC220B14821 /* Pods-GitAldo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitAldo.release.xcconfig"; path = "Target Support Files/Pods-GitAldo/Pods-GitAldo.release.xcconfig"; sourceTree = "<group>"; };
@@ -364,10 +376,11 @@
 		257A05F5244FD2BE007C13B1 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				257A0601244FD34A007C13B1 /* Home */,
+				25E0DF5724542A500061C293 /* PullRequests */,
 				25E0DF3C2454183A0061C293 /* Branchs */,
 				257A066C244FE63E007C13B1 /* Onboarding */,
 				257A065A244FE21B007C13B1 /* Splash */,
-				257A0601244FD34A007C13B1 /* Home */,
 				257A05FE244FD330007C13B1 /* Main */,
 			);
 			path = Scenes;
@@ -562,6 +575,27 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		25E0DF5724542A500061C293 /* PullRequests */ = {
+			isa = PBXGroup;
+			children = (
+				25E0DF5824542A5E0061C293 /* Cell */,
+				25E0DF5F24542ADE0061C293 /* PullRequestsController.swift */,
+				25E0DF6024542ADE0061C293 /* PullRequestsController.xib */,
+				25E0DF6324542B040061C293 /* PullRequestsNavigator.swift */,
+			);
+			path = PullRequests;
+			sourceTree = "<group>";
+		};
+		25E0DF5824542A5E0061C293 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				25E0DF5924542A740061C293 /* PullRequestCell.swift */,
+				25E0DF5A24542A740061C293 /* PullRequestCell.xib */,
+				25E0DF5D24542A9E0061C293 /* PullRequestViewModel.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		48AD3C536A4627AA4EF63E6C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -748,6 +782,8 @@
 			files = (
 				257A064D244FE075007C13B1 /* Montserrat-Bold.ttf in Resources */,
 				257A064C244FE075007C13B1 /* Montserrat-Regular.ttf in Resources */,
+				25E0DF6224542ADE0061C293 /* PullRequestsController.xib in Resources */,
+				25E0DF5C24542A740061C293 /* PullRequestCell.xib in Resources */,
 				257A05D7244FD12F007C13B1 /* LaunchScreen.storyboard in Resources */,
 				257A0650244FE0EC007C13B1 /* ErrorSound.mp3 in Resources */,
 				257A066A244FE49D007C13B1 /* SplashController.xib in Resources */,
@@ -892,13 +928,16 @@
 				257A0658244FE1A6007C13B1 /* MainNavigationController.swift in Sources */,
 				257A0653244FE107007C13B1 /* StaticConstants.swift in Sources */,
 				25E0DF542454252E0061C293 /* UIButtonExtensions.swift in Sources */,
+				25E0DF6424542B040061C293 /* PullRequestsNavigator.swift in Sources */,
 				257A0660244FE22E007C13B1 /* SplashNavigator.swift in Sources */,
 				257A0674244FE656007C13B1 /* OnboardingViewModel.swift in Sources */,
 				25E0DF512454218B0061C293 /* BranchsControllerUI.swift in Sources */,
 				257A0646244FDFAC007C13B1 /* Constants.swift in Sources */,
 				25E0DF4824541B400061C293 /* BranchCell.swift in Sources */,
 				25E0DF39245409280061C293 /* RepositoryCell.swift in Sources */,
+				25E0DF5B24542A740061C293 /* PullRequestCell.swift in Sources */,
 				257A0603244FD357007C13B1 /* HomeNavigator.swift in Sources */,
+				25E0DF6124542ADE0061C293 /* PullRequestsController.swift in Sources */,
 				257A0610244FD3D5007C13B1 /* LanguageManager.swift in Sources */,
 				257A0615244FD3D5007C13B1 /* Vibrator.swift in Sources */,
 				257A05CB244FD12E007C13B1 /* AppDelegate.swift in Sources */,
@@ -906,6 +945,7 @@
 				257A0611244FD3D5007C13B1 /* SoundEffects.swift in Sources */,
 				257A0671244FE656007C13B1 /* OnboardingNavigator.swift in Sources */,
 				25E0DF4B24541B760061C293 /* BranchCellViewModel.swift in Sources */,
+				25E0DF5E24542A9E0061C293 /* PullRequestViewModel.swift in Sources */,
 				25E0DF3F245418590061C293 /* BranchsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

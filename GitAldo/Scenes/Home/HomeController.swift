@@ -75,13 +75,6 @@ extension HomeController: UITableViewDelegate {
     return 104
   }
 }
-
-extension Repository {
-  func asCellViewModel(_ delegate: RepositoryCellDelegate) -> RepositoryCellViewModel {
-    return RepositoryCellViewModel(model: self, delegate: delegate)
-  }
-}
-
 extension HomeController: RepositoryCellDelegate {
   func didSelectBranchs(_ branchUrl: String) {
     viewModel.toBranchs(branchUrl: branchUrl)
@@ -90,6 +83,4 @@ extension HomeController: RepositoryCellDelegate {
   func didSelectPullReqs(_ repository: RepositoryCellViewModel) {
     viewModel.toPullRequests(repository: repository)
   }
-  
-  
 }

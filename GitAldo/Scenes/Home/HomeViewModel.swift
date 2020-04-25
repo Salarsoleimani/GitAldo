@@ -43,7 +43,7 @@ final class HomeViewModel: ViewModelType {
     navigator.toBranchs(branchUrl: branchUrl)
   }
   func toPullRequests(repository: RepositoryCellViewModel) {
-    
+    navigator.toPullRequests(repository)
   }
   
 }
